@@ -22,4 +22,7 @@ bin-release/
 myvenv/
 
 # Pycache
-__pycache__
+__pycache__/
+~.pyc
+# Database
+db.sqlite3
