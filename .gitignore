@@ -20,3 +20,6 @@ bin-release/
 
 # Virtual Environment
 myvenv/
+
+# Pycache
+__pycache__
