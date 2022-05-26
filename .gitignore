@@ -23,6 +23,6 @@ myvenv/
 
 # Pycache
 __pycache__/
-~.pyc
+*.pyc
 # Database
 db.sqlite3
