@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('instagram.urls')),
     path('content/', include('content.urls')),
+    path('user', include('user.urls')),
 ]
