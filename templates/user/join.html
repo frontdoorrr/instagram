@@ -96,7 +96,7 @@
             dataType: "json",
             success: function (data){
                 alert(data.message);
-                location.replace('{% url 'login' %}');
+                location.replace('{% url "login" %}');
             },
             error:function (request, status, error){
                 let data = JSON.parse(request.responseText);
