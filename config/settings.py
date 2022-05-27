@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'instagram',
     'content',
+   
 ]
 
 MIDDLEWARE = [
