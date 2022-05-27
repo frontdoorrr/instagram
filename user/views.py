@@ -20,7 +20,7 @@ class Login(APIView):
         if password is None:
             return Response(status=500, data=dict(message='비밀번호를 입력해주세요'))
         
-        user = User.object.filter(email=email.first())
+        user = User.objects.filter(email=email).first()
 
         if user is None:
             return Response(status=500, data=dict(message='입력정보가 잘못되었습니다.'))
@@ -48,7 +48,7 @@ class Join(APIView):
         elif User.objects.filter(user_id=user_id).exists():
             return Response(status=500, data=dict(message='사용자 이름' + user_id + '이(가) 존재합니다.'))
 
-        User.objects.create(paswsword=make_password(password), 
+        User.objects.create(password=make_password(password), 
                                                     email=email,
                                                     user_id=user_id, 
                                                     name=name)
